@@ -1,0 +1,30 @@
+<div class="container p-4">
+  <div class="columns is-centered">
+    <div class="column is-two-thirds">
+      <form action="/posts/new" method="POST">
+        <legend>New Post</legend>
+        <div class="field">
+          <label for="post-title">Title</label>
+          <input type="text" name="post-title" id="post-title" placeholder="Title" class="input">
+        </div>
+        <div class="field">
+          <label for="post-url" class="label">Url</label>
+          <input type="url" class="input" placeholder="https://www.google.com" id="post-url" name="url">
+        </div>
+        <div class="field">
+          <label for="post-summary" class="label">Summary</label>
+          <textarea name="summary" id="post-summary" cols="30" rows="10" class="input" placeholder="Summary"></textarea>
+        </div>
+        <div class=" buttons is-right">
+          <div class="control">
+            <button class="button is-link">Create Post</button>
+          </div>
+          <div class="control">
+            <button class="button is-link is-light">Cancel</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
