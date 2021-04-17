@@ -13,7 +13,8 @@ const PostSchema  = new Schema({
   summary: {
     type: String,
     required: true,
-  }
+  },
+  
 },
   { timestamps: {createdAt: 'created_at'} }
 );

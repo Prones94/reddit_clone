@@ -1,0 +1,14 @@
+<div class="container p-4">
+  <div class="columns is-centered">
+    <div class="column is-two-thirds">
+      <ul>
+        {{#each posts}}
+          <li class="list-group-item">
+            <div class="lead">{{this.title}}</div>
+            <a href="{{this.url}}" target="_blank">{{this.url}}</a>
+          </li>
+          {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>
