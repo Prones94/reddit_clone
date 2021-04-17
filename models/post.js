@@ -14,7 +14,14 @@ const PostSchema  = new Schema({
     type: String,
     required: true,
   },
-  
+  subbredit: {
+    type: String,
+    required: true
+  },
+  comments: [{
+    type: Schema.Types.ObjectId,
+    ref: 'Comment'
+  }]
 },
   { timestamps: {createdAt: 'created_at'} }
 );
